@@ -1,0 +1,18 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.footer {
+    padding: 2rem 0;
+
+    &__grid {
+        @include m.tablet {
+             display: flex;
+             justify-content: space-between;
+        } 
+    }
+
+    &__copyright {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
